@@ -1,0 +1,65 @@
+body {
+  height: 2000px;
+}
+#tool-bar {
+  position: fixed;
+  top: 360px;
+  right: 10px;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 999;
+    cursor: pointer;
+    li {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      border-bottom: 2px solid #fff;
+      div {
+        position: absolute;
+        top: 0;
+        left: -200px;
+        width: 200px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+#hottech_wechat,
+#hottech_share,
+#hottech_top {
+  background-image: url("../images/sbtn.png");
+}
+#hottech_wechat {
+  background-position: 0 0;
+  &:hover {
+    background-position: -50px 0;
+  }
+  .hottech_wechat_code {
+
+  }
+}
+#hottech_share {
+  background-position: 0 -50px;
+  &:hover {
+    background-position: -50px -50px;
+  }
+  .hottech_share_code {
+    top: -52px;
+
+  }
+}
+#hottech_top {
+  background-position: 0 -100px;
+  &:hover {
+    background-position: -50px -100px;
+  }
+  a {
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+}
